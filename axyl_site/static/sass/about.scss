@@ -1,0 +1,67 @@
+@use "foundation";
+@use "foundation/colors" as c;
+
+
+.about {
+  font-size: 18px;
+  margin: 40px 0;
+
+  .section__content {
+    max-width: 800px;
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+
+  &__header {
+    text-align: center;
+    margin: 30px 0;
+  }
+}
+
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+
+  a:hover {
+    color: inherit;
+    text-decoration: underline dashed;
+  }
+
+  &__image img {
+    height: 120px;
+    border-radius: 50%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &__name {
+    color: c.$blue-2;
+    font-size: 1.2em;
+  }
+
+  &__title {
+    font-size: 0.9em;
+  }
+}
