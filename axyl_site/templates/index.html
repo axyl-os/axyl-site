@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta name="author" content="Gabriel Matthews"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="icon" type="image/png" href="assets/img/axyl-logo.svg">
+    <link rel="icon" type="image/png" href="static/img/axyl-logo.svg">
 
     <!-- HTML Meta Tags -->
     <title>Axyl - The Linux distro for tiling window managers</title>
@@ -15,7 +15,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Axyl - The distro for tiling WMs">
     <meta property="og:description" content="Axyl is a window manager-centric distro built on top of Arch Linux. Choose from several tiling window managers - i3, bspwm, dwm, XMonad and more.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/axyl-os/axyl-os.github.io/master/assets/img/axyl-social-preview.png">
+    <meta property="og:image" content="https://raw.githubusercontent.com/axyl-os/axyl-os.github.io/master/static/img/axyl-social-preview.png">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
@@ -23,11 +23,11 @@
     <meta property="twitter:url" content="https://axyl-os.github.io/">
     <meta name="twitter:title" content="Axyl - The distro for tiling WMs">
     <meta name="twitter:description" content="Axyl is a window manager-centric distro built on top of Arch Linux. Choose from several tiling window managers - i3, bspwm, dwm, XMonad and more.">
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/axyl-os/axyl-os.github.io/master/assets/img/axyl-social-preview.png">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/axyl-os/axyl-os.github.io/master/static/img/axyl-social-preview.png">
 
     <script src="https://kit.fontawesome.com/86c060d6eb.js" crossorigin="anonymous"></script>
-    <script src="assets/js/menu.js" defer></script>
-    <link rel="stylesheet" href="./assets/css/styles.css"/>
+    <script src="static/js/menu.js" defer></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"/>
   </head>
 
   <body>
@@ -36,7 +36,7 @@
       <div class="header">
         <div class="header__content">
           <div class="header__logo">
-            <img src="assets/img/axyl-logo.svg" alt="Axyl Logo" draggable=false>
+            <img src="static/img/axyl-logo.svg" alt="Axyl Logo" draggable=false>
             <div class="header__logo__title">AXYL</div>
           </div>
 
@@ -74,7 +74,7 @@
           </div>
 
           <div class="hero__image">
-            <img src="./assets/img/hero-preview.png" alt="XMonad desktop">
+            <img src="./static/img/hero-preview.png" alt="XMonad desktop">
           </div>
         </div>
       </div>
@@ -143,7 +143,7 @@
 
             <div class="wm__entry">
               <div class="wm__image">
-                <img src="assets/img/window-managers/i3.svg" alt="i3" draggable=false>
+                <img src="static/img/window-managers/i3.svg" alt="i3" draggable=false>
               </div>
 
               <div class="wm__text">
@@ -171,7 +171,7 @@
 
             <div class="wm__entry">
               <div class="wm__image">
-                <img src="assets/img/window-managers/bspwm.svg" alt="bspwm" draggable=false>
+                <img src="static/img/window-managers/bspwm.svg" alt="bspwm" draggable=false>
               </div>
               <div class="wm__text">
                 <h3 class="wm__text__title">
@@ -197,7 +197,7 @@
 
             <div class="wm__entry">
               <div class="wm__image">
-                <img src="assets/img/window-managers/dwm.svg" alt="dwm" draggable=false>
+                <img src="static/img/window-managers/dwm.svg" alt="dwm" draggable=false>
               </div>
               <div class="wm__text">
                 <h3 class="wm__text__title">
@@ -225,7 +225,7 @@
 
             <div class="wm__entry">
               <div class="wm__image">
-                <img src="assets/img/window-managers/xmonad.svg" alt="XMonad" draggable=false>
+                <img src="static/img/window-managers/xmonad.svg" alt="XMonad" draggable=false>
               </div>
               <div class="wm__text">
                 <h3 class="wm__text__title">
@@ -349,9 +349,9 @@
             <h2>Our Supporters</h2>    
           </div>
           <div class="sponsors__images">
-            <a href="https://arcolinux.com/"><img src="./assets/img/arcolinux-logo.svg" alt="ArcoLinux"></a>
-            <a href="https://fosshost.org/"><img class="fosshost" src="./assets/img/fosshost-logo.png" alt="Fosshost"></a>
-            <a href="https://aarch64.com/"><img src="./assets/img/aarch64-logo.png" alt="AArch64"></a> 
+            <a href="https://arcolinux.com/"><img src="./static/img/arcolinux-logo.svg" alt="ArcoLinux"></a>
+            <a href="https://fosshost.org/"><img class="fosshost" src="./static/img/fosshost-logo.png" alt="Fosshost"></a>
+            <a href="https://aarch64.com/"><img src="./static/img/aarch64-logo.png" alt="AArch64"></a> 
           </div>
         </div>
       </div>
@@ -360,7 +360,7 @@
         <div class="section__content">
           <div class="footer__left">
             <div class="footer__logo">
-              <img src="assets/img/axyl-logo.svg" alt="Axyl Logo" draggable=false>
+              <img src="static/img/axyl-logo.svg" alt="Axyl Logo" draggable=false>
             </div>
 
             <div class="footer__copyright">
