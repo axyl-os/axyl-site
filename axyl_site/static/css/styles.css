@@ -40,7 +40,7 @@ h1, h2, h3, h4 {
   align-items: center;
 }
 
-.header {
+.navigation {
   border-bottom: 3px solid #434C5E;
   display: flex;
   justify-content: center;
@@ -48,7 +48,7 @@ h1, h2, h3, h4 {
   align-self: stretch;
   padding: 5px 0;
 }
-.header .header__logo {
+.navigation .navigation__logo {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -57,24 +57,24 @@ h1, h2, h3, h4 {
   letter-spacing: 0.1em;
   user-select: none;
 }
-.header .header__logo img {
+.navigation .navigation__logo img {
   max-height: 50px;
   margin: 6px 0;
 }
-.header .header__content {
+.navigation .navigation__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 90%;
   max-width: 1120px;
 }
-.header .header__nav__btn {
+.navigation .navigation__nav__btn {
   display: none;
 }
-.header .header__nav {
+.navigation .navigation__nav {
   display: flex;
 }
-.header .header__nav a {
+.navigation .navigation__nav a {
   text-decoration: none;
   color: #ECEFF4;
   font-weight: 600;
@@ -82,19 +82,19 @@ h1, h2, h3, h4 {
   margin: 0 9px;
   transition: all 0.25s ease-in-out;
 }
-.header .header__nav a:hover {
+.navigation .navigation__nav a:hover {
   color: #88C0D0;
 }
-.header .header__nav a.header__nav--active {
+.navigation .navigation__nav a.navigation__nav--active {
   color: #88C0D0;
 }
-.header .header__nav__links {
+.navigation .navigation__nav__links {
   list-style-type: none;
   display: flex;
   flex-flow: row wrap;
   padding: 0;
 }
-.header .header__nav__links .download a {
+.navigation .navigation__nav__links .download a {
   color: #2E3440;
   margin: 0 8px;
   background-color: #88C0D0;
@@ -103,7 +103,7 @@ h1, h2, h3, h4 {
   border: 2px solid #88C0D0;
   transition: all 0.25s ease-in-out;
 }
-.header .header__nav__links .download a:hover {
+.navigation .navigation__nav__links .download a:hover {
   color: #88C0D0;
   border-color: #88C0D0;
   background-color: rgba(0, 0, 0, 0);
@@ -728,25 +728,26 @@ h1, h2, h3, h4 {
   }
 }
 @media all and (max-width: 600px) {
-  .header .header__logo {
+  .navigation .navigation__logo {
     font-size: 1.8em;
   }
-  .header .header__nav {
+  .navigation .navigation__nav {
     flex-direction: column;
     align-items: flex-end;
     right: 20px;
     top: 20px;
   }
-  .header .header__nav .header__nav__btn {
+  .navigation .navigation__nav .navigation__nav__btn {
     display: block;
     font-size: 2em;
     transition: all 0.2s ease-in-out;
+    cursor: pointer;
   }
-  .header .header__nav .header__nav__btn.responsive {
+  .navigation .navigation__nav .navigation__nav__btn.responsive {
     color: #88C0D0;
     transform: rotate(-90deg);
   }
-  .header .header__nav .header__nav__links {
+  .navigation .navigation__nav .navigation__nav__links {
     display: none;
     opacity: 0;
     text-align: right;
@@ -765,25 +766,25 @@ h1, h2, h3, h4 {
     padding-right: 2px;
     transition: all 0.2s ease-out;
   }
-  .header .header__nav .header__nav__links .download {
+  .navigation .navigation__nav .navigation__nav__links .download {
     margin: 7px 0;
   }
-  .header .header__nav .header__nav__links.responsive {
+  .navigation .navigation__nav .navigation__nav__links.responsive {
     display: flex;
     opacity: 1;
   }
-  .header .header__nav .header__nav__links.appear {
+  .navigation .navigation__nav .navigation__nav__links.appear {
     display: flex;
     opacity: 1;
     animation-name: navdown;
     animation-duration: 0.25s;
   }
-  .header .header__nav .header__nav__links.disappear {
+  .navigation .navigation__nav .navigation__nav__links.disappear {
     display: flex;
     animation-name: navup;
     animation-duration: 0.25s;
   }
-  .header .header__nav li {
+  .navigation .navigation__nav li {
     margin: 3px 0;
   }
 

@@ -64,7 +64,7 @@ h1, h2, h3, h4 {
   align-items: center;
 }
 
-.header {
+.navigation {
   border-bottom: 3px solid $dark-3;
   display: flex;
   justify-content: center;
@@ -72,7 +72,7 @@ h1, h2, h3, h4 {
   align-self: stretch;
   padding: 5px 0;
 
-  .header__logo {
+  .navigation__logo {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -87,7 +87,7 @@ h1, h2, h3, h4 {
     }
   }
 
-  .header__content {
+  .navigation__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -95,11 +95,11 @@ h1, h2, h3, h4 {
     max-width: $content-width + 70px;
   }
 
-  .header__nav__btn {
+  .navigation__nav__btn {
     display: none;
   }
 
-  .header__nav {
+  .navigation__nav {
     display: flex;
 
     a {
@@ -116,12 +116,12 @@ h1, h2, h3, h4 {
     }
 
 
-    a.header__nav--active {
+    a.navigation__nav--active {
       color: $blue-2;
     }
   }
 
-  .header__nav__links {
+  .navigation__nav__links {
     list-style-type: none;
     display: flex;
     flex-flow: row wrap;
@@ -705,29 +705,30 @@ h1, h2, h3, h4 {
 }
 
 @media all and (max-width: 600px) {
-  .header {
-    .header__logo {
+  .navigation {
+    .navigation__logo {
       font-size: 1.8em;
     }
 
-    .header__nav {
+    .navigation__nav {
       flex-direction: column;
       align-items: flex-end;
       right: 20px;
       top: 20px;
 
-      .header__nav__btn {
+      .navigation__nav__btn {
         display: block;
         font-size: 2em;
         transition: all 0.20s ease-in-out;
+        cursor: pointer;
       }
 
-      .header__nav__btn.responsive {
+      .navigation__nav__btn.responsive {
         color: $blue-2;
         transform: rotate(-90deg);
       }
 
-      .header__nav__links {
+      .navigation__nav__links {
         display: none;
         opacity: 0;
         text-align: right;
@@ -752,19 +753,19 @@ h1, h2, h3, h4 {
         }
       }
 
-      .header__nav__links.responsive {
+      .navigation__nav__links.responsive {
         display: flex;
         opacity: 1;
       }
 
-      .header__nav__links.appear {
+      .navigation__nav__links.appear {
         display: flex;
         opacity: 1;
         animation-name: navdown;
         animation-duration: 0.25s;
       }
 
-      .header__nav__links.disappear {
+      .navigation__nav__links.disappear {
         display: flex;
         animation-name: navup;
         animation-duration: 0.25s;

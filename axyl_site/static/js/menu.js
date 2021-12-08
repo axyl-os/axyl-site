@@ -1,5 +1,5 @@
-const burgerButton = document.querySelector(".header__nav__btn");
-const navLinks = document.querySelector(".header__nav__links");
+const burgerButton = document.querySelector(".navigation__nav__btn");
+const navLinks = document.querySelector(".navigation__nav__links");
 
 burgerButton.addEventListener("click", function () {
   if (!this.classList.contains("responsive")) {
