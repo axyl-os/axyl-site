@@ -13,7 +13,7 @@ body {
 
 ::selection {
   background-color: #5E81AC;
-  color: #E5E9F0;
+  color: #0f0b98;
 }
 
 a {
@@ -22,7 +22,7 @@ a {
 }
 
 a:hover {
-  color: #ECEFF4;
+  color: #EEEEE1;
 }
 
 h2 {
